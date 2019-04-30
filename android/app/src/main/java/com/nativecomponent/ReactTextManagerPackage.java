@@ -6,7 +6,7 @@ import com.facebook.react.ReactPackage;
 import com.facebook.react.bridge.ReactApplicationContext;
 import com.facebook.react.bridge.NativeModule;
 
-public class ReactImageManagerPackage implements ReactPackage {
+public class ReactTextManagerPackage implements ReactPackage {
   @Override
   public List<NativeModule> createNativeModules(ReactApplicationContext reactContext) {
     return Collections.emptyList();
@@ -14,7 +14,7 @@ public class ReactImageManagerPackage implements ReactPackage {
   @Override
   public List<ViewManager> createViewManagers(ReactApplicationContext reactContext) {
     return Arrays.<ViewManager>asList(
-      new ReactImageManager()
+      new ReactTextManager()
     );
   }
 }

@@ -11,9 +11,9 @@ import com.facebook.react.uimanager.SimpleViewManager;
 import com.facebook.react.uimanager.ThemedReactContext;
 import com.facebook.react.uimanager.annotations.ReactProp;
 
-public class ReactImageManager extends SimpleViewManager<TextView> {
+public class ReactTextManager extends SimpleViewManager<TextView> {
 
-  public static final String REACT_CLASS = "REACTImageView";
+  public static final String REACT_CLASS = "REACTTextView";
 
   @Override
   public String getName() {
