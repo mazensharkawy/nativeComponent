@@ -20,13 +20,16 @@ const instructions = Platform.select({
 type Props = {};
 export default class App extends Component<Props> {
   render() {
+    console.log("logging TextView")
+    console.log(TextView)
+    console.log(typeof TextView)
     return (
       <View style={styles.container}>
-      <TextView />
-        <Text style={styles.welcome}>Welcome to React Native!</Text>
-        <Text style={styles.instructions}>To get started, edit App.js</Text>
-        <Text style={styles.instructions}>{instructions}</Text>
-      </View>
+      <TextView style={{height: 100, width:200}}/>
+      {/* //   <Text style={styles.welcome}>Welcome to React Native!</Text>
+      //   <Text style={styles.instructions}>To get started, edit App.js</Text>
+      //   <Text style={styles.instructions}>{instructions}</Text> */}
+       </View>
     );
   }
 }

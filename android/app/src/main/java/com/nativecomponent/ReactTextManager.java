@@ -23,7 +23,7 @@ public class ReactTextManager extends SimpleViewManager<TextView> {
   @Override
   public TextView createViewInstance(ThemedReactContext context) {
             TextView helloTextView = new TextView(context);
-            helloTextView.setText("Hello It's Mazen");
+            helloTextView.setText("Hello It's Mazen and I worked my ass off to do this native Text UI Component .... Thanks for giving a shit");
             // ImageView image = new ImageView(context);
 //            Resources res = getResources();
             // Drawable drawable = ContextCompat.getDrawable(context, R.drawable.mazen);

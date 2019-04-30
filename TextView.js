@@ -9,4 +9,4 @@ import {requireNativeComponent} from 'react-native';
  * - borderRadius: number
  * - resizeMode: 'cover' | 'contain' | 'stretch'
  */
-export default requireNativeComponent('REACTTextView');
+module.exports = requireNativeComponent('REACTTextView');
