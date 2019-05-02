@@ -10,8 +10,9 @@ import android.widget.TextView;
 import com.facebook.react.uimanager.SimpleViewManager;
 import com.facebook.react.uimanager.ThemedReactContext;
 import com.facebook.react.uimanager.annotations.ReactProp;
+import com.blloc.bllocjavatiles;
 
-public class ReactTextManager extends SimpleViewManager<TextView> {
+public class ReactTextManager extends SimpleViewManager<BllocTilesView> {
 
   public static final String REACT_CLASS = "REACTTextView";
 
@@ -21,15 +22,9 @@ public class ReactTextManager extends SimpleViewManager<TextView> {
   }
 
   @Override
-  public TextView createViewInstance(ThemedReactContext context) {
-            TextView helloTextView = new TextView(context);
-            helloTextView.setText("Hello It's Mazen and I worked my ass off to do this native Text UI Component .... Thanks for giving a shit");
-            // ImageView image = new ImageView(context);
-//            Resources res = getResources();
-            // Drawable drawable = ContextCompat.getDrawable(context, R.drawable.mazen);
-//            Drawable drawable = ResourcesCompat.getDrawable(res, R.drawable.mazen, null);
-            // image.setImageDrawable(drawable);
-    return helloTextView;
+  public BllocTilesView createViewInstance(ThemedReactContext context) {
+            BllocTilesView bllocTilesView = new BllocTilesView();
+    return bllocTilesView;
   }
 
 

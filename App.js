@@ -25,7 +25,7 @@ export default class App extends Component<Props> {
     console.log(typeof TextView)
     return (
       <View style={styles.container}>
-      <TextView style={{height: 100, width:200}}/>
+      <TextView style={{height: 1000, width:300}}/>
       {/* //   <Text style={styles.welcome}>Welcome to React Native!</Text>
       //   <Text style={styles.instructions}>To get started, edit App.js</Text>
       //   <Text style={styles.instructions}>{instructions}</Text> */}
