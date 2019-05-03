@@ -10,7 +10,8 @@ import android.widget.TextView;
 import com.facebook.react.uimanager.SimpleViewManager;
 import com.facebook.react.uimanager.ThemedReactContext;
 import com.facebook.react.uimanager.annotations.ReactProp;
-import com.blloc.bllocjavatiles;
+
+import com.blloc.bllocjavatiles.BllocTilesView;
 
 public class ReactTextManager extends SimpleViewManager<BllocTilesView> {
 
@@ -23,7 +24,7 @@ public class ReactTextManager extends SimpleViewManager<BllocTilesView> {
 
   @Override
   public BllocTilesView createViewInstance(ThemedReactContext context) {
-            BllocTilesView bllocTilesView = new BllocTilesView();
+            BllocTilesView bllocTilesView = new BllocTilesView(context);
     return bllocTilesView;
   }
 
